@@ -1,11 +1,11 @@
 import React from "react";
 
-import Component from "./components/component/Component";
+import BgProject from "./components/hook/BgProject";
 
 function App() {
   return (
     <>
-      <Component />
+      <BgProject />
     </>
   );
 }
