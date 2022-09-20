@@ -42,7 +42,7 @@ const FormPassObj = () => {
             placeholder="Enter Your First Name"
             name="fName"
             onChange={EventChange}
-            // value={fullName.fname}
+            value={fullName.fname}
           />
           <br />
           <input
@@ -50,7 +50,7 @@ const FormPassObj = () => {
             placeholder="Enter Your Last Name"
             name="lName"
             onChange={EventChange}
-            // value={fullName.lname}
+            value={fullName.lname}
           />
           <button type="submit">Submit 👍</button>
         </div>
