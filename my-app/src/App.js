@@ -1,11 +1,11 @@
 import React from "react";
 
-import Form1 from "./components/forms/Form1";
+import FormPassObj from "./components/forms/FormPassObj";
 
 function App() {
   return (
     <>
-      <Form1 />
+      <FormPassObj />
     </>
   );
 }

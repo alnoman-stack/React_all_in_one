@@ -2,12 +2,11 @@ import React, { useState } from "react";
 
 import "./forms.css";
 
-const Form1 = () => {
+export default function Form1() {
   const [name, setName] = useState(" ");
-  const [fullName, setFullName] = useState();
+  const [fullName, setFullName] = useState(" ");
 
-  const HandleChange = (e) => {
-    console.log(e.target.value);
+  const EventChange = (e) => {
     setName(e.target.value);
   };
 
@@ -22,15 +21,11 @@ const Form1 = () => {
         <input
           type="text"
           placeholder="Enter Your Name"
-          onChange={HandleChange}
-          value={name}
+          onChange={EventChange}
+          //  value={name}
         />
-        <button type="submit" onClick={HandleClick}>
-          Click Me 👍
-        </button>
+        <button onClick={HandleClick}>Submit 👍</button>
       </div>
     </>
   );
-};
-
-export default Form1;
+}
