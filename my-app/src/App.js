@@ -1,11 +1,11 @@
 import React from "react";
 
-import TodoApp from "./components/todo list/TodoApp";
+import Challenge8 from "./components/challenge/challenge8";
 
 function App() {
   return (
     <>
-      <TodoApp />
+      <Challenge8 />
     </>
   );
 }

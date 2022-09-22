@@ -4,7 +4,7 @@ import Todolist from "./todolist";
 import "./todoapp.css";
 
 const TodoApp = () => {
-  const [inputList, setInputList] = useState("buy apple");
+  const [inputList, setInputList] = useState("");
   const [items, setItems] = useState([]);
 
   const EventChange = (event) => {
