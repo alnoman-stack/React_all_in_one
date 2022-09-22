@@ -10,8 +10,12 @@ const Challenge8 = () => {
     setInc(inc + 1);
   };
   const Dec = () => {
-    console.log("Click");
-    setInc(inc - 1);
+    if (inc > 0) {
+      console.log("Click");
+      setInc(inc - 1);
+    } else {
+      alert("Sorry,Zero limit reached");
+    }
   };
 
   return (
