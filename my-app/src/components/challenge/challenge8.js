@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
+
 import "./challenge8.css";
 
 const Challenge8 = () => {
   const [inc, setInc] = useState(0);
 
   const Inc = () => {
-    console.log("Click");
     setInc(inc + 1);
   };
   const Dec = () => {
     if (inc > 0) {
-      console.log("Click");
       setInc(inc - 1);
     } else {
       alert("Sorry,Zero limit reached");
@@ -24,8 +25,12 @@ const Challenge8 = () => {
         <div className="center_div">
           <h1>{inc}</h1>
           <div className="btn_div">
-            <button onClick={Inc}>Increm</button>
-            <button onClick={Dec}>Decrem</button>
+            <button onClick={Inc}>
+              <AddIcon />
+            </button>
+            <button onClick={Dec}>
+              <RemoveIcon />
+            </button>
           </div>
         </div>
       </div>
