@@ -21,9 +21,7 @@ const Challenge8 = () => {
           <h1>{inc}</h1>
           <div className="btn_div">
             <button onClick={Inc}>Increm</button>
-            <button onClick={Dec} disabled={if()}>
-              Decrem
-            </button>
+            <button onClick={Dec}>Decrem</button>
           </div>
         </div>
       </div>
