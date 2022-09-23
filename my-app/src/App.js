@@ -1,12 +1,11 @@
 import React from "react";
 
-import Challenge8 from "./components/challenge/challenge8";
-import DigitalClock from "./components/npm digital clock/DigitalClock";
+import TodoApp from "./components/todo app matrial ui/TodoApp";
 
 function App() {
   return (
     <>
-      <DigitalClock />
+      <TodoApp />
     </>
   );
 }
