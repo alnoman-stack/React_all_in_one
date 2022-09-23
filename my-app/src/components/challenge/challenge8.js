@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
 
 import "./challenge8.css";
 
@@ -25,12 +27,17 @@ const Challenge8 = () => {
         <div className="center_div">
           <h1>{inc}</h1>
           <div className="btn_div">
-            <button onClick={Inc}>
-              <AddIcon />
-            </button>
-            <button onClick={Dec}>
-              <RemoveIcon />
-            </button>
+            <Tooltip title="Add">
+              <Button onClick={Inc}>
+                <AddIcon />
+              </Button>
+            </Tooltip>
+
+            <Tooltip title="Delete">
+              <Button onClick={Dec}>
+                <RemoveIcon />
+              </Button>
+            </Tooltip>
           </div>
         </div>
       </div>
