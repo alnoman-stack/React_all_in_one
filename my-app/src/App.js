@@ -1,11 +1,12 @@
 import React from "react";
 
 import Challenge8 from "./components/challenge/challenge8";
+import DigitalClock from "./components/npm digital clock/DigitalClock";
 
 function App() {
   return (
     <>
-      <Challenge8 />
+      <DigitalClock />
     </>
   );
 }
