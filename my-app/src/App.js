@@ -1,11 +1,11 @@
 import React from "react";
 
-import Accordion from "./components/challenge/Accordion/Accordion";
+import KeepApp from "./components/keep app/KeepApp";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
-      <Accordion />
+      <KeepApp />
     </>
   );
 }
