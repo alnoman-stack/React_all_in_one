@@ -8,12 +8,21 @@ import Note from "./Note";
 
 const KeepApp = () => {
   const [addItem, setAddItem] = useState([]);
+
   const addNote = (note) => {
     alert("I am clicked");
 
     setAddItem((preVal) => {
       return [...preVal, note];
     });
+  };
+
+  const onDelete = (id) => {
+    setAddItem((oldData) =>
+      oldData.filter((currdata, indx) => {
+        return indx != id;
+      })
+    );
   };
 
   return (
@@ -29,6 +38,7 @@ const KeepApp = () => {
               content={cVal.content}
               key={ind}
               id={ind}
+              deleteItem={onDelete}
             />
           );
         })}

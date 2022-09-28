@@ -74,7 +74,7 @@
     
     .note {
         width: 260px;
-        margin: 0 15px;
+        margin: 10px 15px;
         display: inline-block;
         padding: 1%;
         height: auto;
@@ -82,7 +82,7 @@
         border-radius: 8px;
     }
     
-    .deletIcon {
+    .deleteIcon {
         color: #c7b000;
         box-shadow: 2px 3px 20px grey;
         border-radius: 50% !important;
@@ -94,6 +94,6 @@
         text-align: center;
         padding: 1% 5%;
         position: absolute;
-        background-color: #e9d4d4;
+        /* background-color: #e9d4d4; */
         bottom: 0;
     }
