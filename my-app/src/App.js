@@ -1,12 +1,12 @@
 import React from "react";
 
-import TodoApp from "./components/challenge/todoapp_MU/ToDoApp";
+import Accordion from "./components/accordion/Accordion";
 
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
-      <TodoApp />
+      <Accordion />
     </>
   );
 }
