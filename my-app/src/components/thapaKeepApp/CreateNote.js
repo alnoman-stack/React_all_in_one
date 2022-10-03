@@ -9,12 +9,12 @@ const CreateNote = (props) => {
     content: "",
   });
 
-  const InputEvent = (event) => {
+  const eventChange = (event) => {
     const { value, name } = event.target;
 
-    setNote((oldData) => {
+    setNote((preData) => {
       return {
-        ...oldData,
+        ...preData,
         [name]: value,
       };
     });
@@ -30,27 +30,29 @@ const CreateNote = (props) => {
 
   return (
     <>
-      <div className="main_node">
+      <div className="main_note">
         <form action="">
           <input
-            type="text"
             name="title"
+            type="text"
             value={note.title}
-            onChange={InputEvent}
+            onChange={eventChange}
             placeholder="Title"
           />
           <textarea
-            id=""
-            cols="30"
-            rows="1"
-            value={note.content}
             name="content"
-            onChange={InputEvent}
+            id=""
+            cols=""
+            rows=""
+            value={note.content}
+            onChange={eventChange}
             placeholder="Write a note..."
           ></textarea>
-          <Button onClick={addEvent} className="plus_sign">
-            +
-          </Button>
+          <div className="btn_div">
+            <Button className="btn" onClick={addEvent}>
+              <AddIcon className="addIcon" />
+            </Button>
+          </div>
         </form>
       </div>
     </>
