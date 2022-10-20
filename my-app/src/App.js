@@ -5,6 +5,7 @@ import { Route, Switch } from "react-router-dom";
 import About from "./components/reactRouter/About";
 import Contact from "./components/reactRouter/Contact";
 import Error from "./components/reactRouter/Error";
+import Navbar from "./components/reactRouter/Navbar";
 
 const App = () => {
   const Name = () => {
@@ -12,6 +13,7 @@ const App = () => {
   };
   return (
     <>
+      <Navbar />
       <Switch>
         <Route exact path="/" component={About} />
         <Route exact path="/contact" component={Contact} />
