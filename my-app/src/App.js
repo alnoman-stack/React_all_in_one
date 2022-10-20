@@ -1,11 +1,11 @@
 import React from "react";
-import UseEffect from "./components/useEffect/UseEffect";
-import UseEffectChallange from "./components/useEffect/UseEffectChallange";
+
+import ComA from "./components/API call_pokemon/ComA";
 
 const App = () => {
   return (
     <>
-      <UseEffectChallange />
+      <ComA />
     </>
   );
 };

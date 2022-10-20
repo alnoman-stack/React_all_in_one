@@ -14,7 +14,7 @@ const UseEffectChallange = () => {
           setNum(num + 1);
         }}
       >
-        Click Me {num}{" "}
+        Click Me
       </button>
     </>
   );
